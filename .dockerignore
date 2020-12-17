@@ -1,0 +1,9 @@
+docs/
+.git/
+.idea/
+venv/
+.gitignore
+Dockerfile
+env.example
+README.md
+__pycache__/
