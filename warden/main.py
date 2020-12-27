@@ -2,7 +2,7 @@ import time
 
 import requests
 
-from warden.settings import INTERVAL, TIMEOUT, WEBHOOK, Logger
+from warden.settings import INTERVAL, TIMEOUT, WEBHOOK, Logger, VM_NAME
 
 
 class IfConfig:
@@ -17,7 +17,7 @@ class IfConfig:
 
 
 def trigger_notification(ip_address):
-    message = {"content": f"Current minecraft IP address {ip_address}"}
+    message = {"content": f"Current {VM_NAME} IP address {ip_address}"}
 
     try:
         requests.post(WEBHOOK, data=message)
