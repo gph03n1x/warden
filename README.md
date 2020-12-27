@@ -1,6 +1,10 @@
 Warden
 ======
 
+Warden is a simple periodic service which notifies a discord 
+channel through a webhook when your IP address changes. This can be quite useful when you have Machines that are not assigned a static IP address but, they include a bunch of services which can be accessed through the web.
+
+
 Deployment
 ----------
 
